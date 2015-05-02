@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>MovieTime | Find you Movie</title>
+	<meta name='description' content='movies, movieTime'/>
+	<meta name='keywords' content='peliculas, movies, movieTime'/>		
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen, projection" />
+	<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script>
+	$(function(){
+	$('a').each(function() {
+	if ($(this).prop('href') == window.location.href) {
+	$(this).addClass('current');
+	}
+	});
+	});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+			<!--========Barra de búsqueda=========-->
+		
+		<div class="sidebar_search">
+                    <form>
+                        <input type="text" name="" class="search_input" value="Buscar" onclick="this.value=''" />
+                        <input type="image" class="search_submit" src="images/search.png" />
+                    </form>            
+        </div>
+		<br><br>
+		
+		<!--========================== L O G O  &   N A V    B A R ============================-->
+		<header>
+			<div id="logo">
+				<a href="index.html"><span style="color:black; font-size:30px; font-weight: bold">Movie</span><span  style="color:#00BCF2; font-size:30px; font-weight: bold">Time</span></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="cines.html">Cines</a></li>
+					<li><a href="cartelera.html">Cartelera</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<!--========================== M A I N   C O N T E N T =============================-->
+		<!--Here goes the page title and tag line-->
+		<div id="pagetitle">
+			<h1>Rápidos y furiosos 7</h1>
+			<p>La venganza llega a casa.</p>
+		</div>
+		<div id="main" class="clearfix">
+			<div id="content"><!--Here goes the blog post-->
+				
+				<br>
+				<img src="images/bp-ryf.png" alt="" />
+				<div class="quote">
+					
+					<p align="justify">
+					Tras haber derrotado a Owen Shaw; Dominic Toretto (Vin Diesel), Brian O’Conner (Paul Walker) y el resto del equipo regresan a Estados Unidos para llevar una vida normal, 
+					como siempre habían querido. Pero Ian Shaw (Jason Statham), hermano mayor de Owen, está en búsqueda de Dominic Toretto 
+					para cobrar venganza por la muerte de su hermano, situación que pone en peligro a todo el equipo. Al enterarse de la muerte de Han, 
+					la familia Rápidos y Furiosos se propone encontrar al hombre que mató a uno de los suyos, antes de que él los encuentre primero.
+					</p>
+				</div>
+				<br>
+				
+				<h2>Trailer</h2>
+				<video  class="alignleft"  controls>
+					<source src="videos/RYF.mp4" type="video/mp4">
+					<source src="videos/RYF.ogg" type="video/ogg">
+					Your browser does not support the video tag.
+				</video>
+				
+			</div><!--End of the Content-->
+			
+			<div id="sidebar"><!--Here goes the sidebar items-->
+				<div class="sidebar_item categories clearfix">
+					<h5>Categoria</h5>
+					<ul>
+						<li>Acción</li>
+					</ul>
+				</div>
+				<div class="sidebar_item">
+					<h5>Clasificación</h5>
+					<p>B15</p>
+				</div>	
+				<div class="sidebar_item">
+					<h5>Duración</h5>
+					<ul>
+						<li><span class="date">2 hr 15m</li>
+					</ul>
+				</div>
+				
+			</div><!--End of Sidebar-->
+		</div><!--End of Main-->
+
+		<!--============================= F O O T E R  =======================================-->
+		<footer>
+			<div id="widget1">
+				<a href="index.html"><span style="color:black; font-size:30px; font-weight: bold">Movie</span><span  style="color:#2ECCFA; font-size:30px; font-weight: bold">Time</span></a>
+			</div>
+			<div id="widget2">
+				<h1>About Us</h1>
+				<p>Un poco de información acerca de MovieTime.</p>
+			</div>
+			
+			<div id="copyrights">
+				<p>Copyright © 2014 MovieTime. All rights reserved.</p>
+				<span id="designedby">Equipo 3 - Ingeniería web</a>
+			</div>
+		</footer>
+
+	</div>
+</body>
+</html>
